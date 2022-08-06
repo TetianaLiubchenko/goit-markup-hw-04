@@ -115,7 +115,7 @@ img {
 .contacts-tel-header:focus {
   color: var(--color-logo);
 }
-
+/* ------------- */
 .contacts-icons:hover,
 .contacts-icons:focus {
   fill: #2196f3;
@@ -343,7 +343,8 @@ p,
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5 {
   margin: 0;
 }
 
