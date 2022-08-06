@@ -80,8 +80,8 @@ img {
   color: var(--color-logo-header);
 }
 .contacts-header-list {
-  display: flex;
-  justify-content: center;
+  margin-left: auto;
+  gap: 30px;
 }
 
 .header-link {
@@ -108,6 +108,8 @@ img {
   color: var(--color-contacts);
   padding-top: 32px;
   padding-bottom: 32px;
+  display: flex;
+  align-items: center;
 }
 .contacts-mail-header:hover,
 .contacts-tel-header:hover,
@@ -116,10 +118,12 @@ img {
   color: var(--color-logo);
 }
 /* ------------- */
-.contacts-icons:hover,
-.contacts-icons:focus {
-  fill: #2196f3;
+
+.contacts-icons {
+  fill: currentColor;
+  margin-right: 10px;
 }
+
 .item-icons-header {
   display: flex;
   align-items: center;
