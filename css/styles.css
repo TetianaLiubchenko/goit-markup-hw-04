@@ -10,7 +10,7 @@
   --color-btn-text: #ffffff;
   ---color-text-main: #757575;
   ---color-skills-bgd: #ffffff;
-  ---color-team-section-bgd: #f5f4fa;
+  ---color-team-section-bgd: rgba(245, 244, 250, 1);
   ---color-logo-footer: #ffffff;
   ---color-portfolio-bgd: #f5f5f5;
   ---color-portfolio-btn: #f5f4fa;
@@ -384,7 +384,7 @@ h5 {
   margin-bottom: 50px;
 }
 .clients-section {
-  background: #f5f5f5;
+  background: var(---color-skills-bgd);
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -457,8 +457,9 @@ footer {
   color: var(--color-logo);
   margin-bottom: 20px;
 }
-.contacts-link-footer,
-.contacts-mail-footer {
+
+.contacts-item-footer-mail,
+.contacts-item-footer-adress {
   margin-bottom: 9px;
 }
 
@@ -496,6 +497,7 @@ footer {
   text-align: start;
   padding: 0 15px;
   display: flex;
+  align-items: baseline;
 }
 
 .footer-text {
@@ -508,13 +510,10 @@ footer {
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;
-  margin-top: 12px;
 }
 .footer-social-links {
-  width: 260px;
-  height: 180px;
   justify-content: baseline;
-  padding-left: 55px;
+  margin-left: 55px;
 }
 .social-link-footer {
   width: 44px;
@@ -529,7 +528,6 @@ footer {
 .social-link-footer:hover,
 .social-link-footer:focus {
   background: #2196f3;
-  border: 1px solid transparent;
 }
 /*portfolio*/
 .main-portfolio {
@@ -556,7 +554,8 @@ footer {
   flex-wrap: wrap;
   gap: 30px;
 }
-.gallery-list:hover {
+.gallery-list:hover,
+.gallery-list:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -584,7 +583,6 @@ footer {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(---color--portfolio-text-btn);
-  min-width: 107px;
   border: 1px solid transparent;
 }
 
@@ -622,4 +620,7 @@ footer {
 .cart-list {
   background: var(---color-cart-portfolio);
   border: 1px solid #eeeeee;
+}
+.gallery-link {
+  display: block;
 }
